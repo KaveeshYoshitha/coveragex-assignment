@@ -159,12 +159,12 @@ docker compose up -d --build
 
 
 - 3️⃣ Access the App
+ 
+   🌐 Frontend: http://localhost:5173
 
--- 🌐 Frontend: http://localhost:5173
+   ⚙️ Backend API: http://localhost:5000
 
--- ⚙️ Backend API: http://localhost:5000
-
--- 🐬 MySQL: localhost:3307
+   🐬 MySQL: localhost:3307
 
 
 - 4️⃣ Stop Everything
@@ -176,6 +176,10 @@ docker compose down -v
 
 ## 🧪 Running Tests
   ### NOTE: RUN THE FULL STACK BEFORE TESTING
+  ```
+    docker compose up -d --build
+```
+
 - ▶️ Backend Tests
 ```
 docker compose exec backend sh -c "npm run test"
