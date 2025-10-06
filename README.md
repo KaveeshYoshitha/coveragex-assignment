@@ -17,18 +17,19 @@
 
 
 🎥 **Project Demo Video**  
-<a href="https://youtu.be/2h-lQ6OSOYw" target="_blank">
-  <img src="https://img.youtube.com/vi/2h-lQ6OSOYw/0.jpg" width="600" alt="CoverageX Todo App Demo">
-</a>
-
+<div align="center"> 
+  <a href="https://youtu.be/2h-lQ6OSOYw" target="_blank"  >
+    <img src="https://img.youtube.com/vi/2h-lQ6OSOYw/0.jpg" width="600" alt="CoverageX Todo App Demo">
+  </a>
+</div>
 
 ## 🧭 Table of Contents
 
 1. [🚀 Tech Stack](#-tech-stack)
 2.  [🧰 Running the Project (via Docker Compose)](#-running-the-project-via-docker-compose)
-3. [📁 Folder Structure](#-folder-structure)  
-4. [⚙️ Environment Variables](#️-environment-variables)  
-5. [🧪 Running Tests](#-running-tests)  
+3.  [🧪 Running Tests](#-running-tests)
+4. [📁 Folder Structure](#-folder-structure)  
+5. [⚙️ Environment Variables](#️-environment-variables)    
 6. [🗂️ Features](#️-features)  
 7. [🧱 Docker Architecture Overview](#-docker-architecture-overview)  
 8. [🧑‍💻 Author](#-author)  
@@ -67,6 +68,65 @@
 - 💾 Persistent storage using Docker volumes
 
 ---
+
+
+## 🧰 Running the Project (via Docker Compose)
+
+- 1️⃣ Clone the Repository
+```
+git clone https://github.com/KaveeshYoshitha/coveragex-assignment.git
+cd coveragex-assignment
+```
+
+
+- 2️⃣ Run the Full Stack
+```
+docker compose up -d --build
+```
+
+
+- 3️⃣ Access the App
+ 
+   🌐 Frontend: http://localhost:5173
+
+   ⚙️ Backend API: http://localhost:5000
+
+   🐬 MySQL: localhost:3307
+
+
+- 4️⃣ Stop Everything
+```
+docker compose down -v
+```
+
+
+
+## 🧪 Running Tests
+  ### NOTE: RUN THE FULL STACK BEFORE TESTING
+  ```
+    docker compose up -d --build
+```
+
+- ▶️ Backend Tests
+```
+docker compose exec backend sh -c "npm run test"
+```
+
+- 📊 View Backend Coverage
+```
+docker compose exec backend sh -c "npx vitest run --coverage"
+```
+
+- 🧩 Frontend Tests
+```
+docker compose exec frontend sh -c "npm run test"
+```
+
+- 📈 View Frontend Coverage
+```
+docker compose exec frontend sh -c "npx vitest run --coverage"
+```
+
 
 
 
@@ -148,62 +208,9 @@ DB_NAME=todo_app
 
 
 
-## 🧰 Running the Project (via Docker Compose)
-
-- 1️⃣ Clone the Repository
-```
-git clone https://github.com/KaveeshYoshitha/coveragex-assignment.git
-cd coveragex-assignment
-```
-
-
-- 2️⃣ Run the Full Stack
-```
-docker compose up -d --build
-```
-
-
-- 3️⃣ Access the App
- 
-   🌐 Frontend: http://localhost:5173
-
-   ⚙️ Backend API: http://localhost:5000
-
-   🐬 MySQL: localhost:3307
-
-
-- 4️⃣ Stop Everything
-```
-docker compose down -v
-```
 
 
 
-## 🧪 Running Tests
-  ### NOTE: RUN THE FULL STACK BEFORE TESTING
-  ```
-    docker compose up -d --build
-```
-
-- ▶️ Backend Tests
-```
-docker compose exec backend sh -c "npm run test"
-```
-
-- 📊 View Backend Coverage
-```
-docker compose exec backend sh -c "npx vitest run --coverage"
-```
-
-- 🧩 Frontend Tests
-```
-docker compose exec frontend sh -c "npm run test"
-```
-
-- 📈 View Frontend Coverage
-```
-docker compose exec frontend sh -c "npx vitest run --coverage"
-```
 
 
 
