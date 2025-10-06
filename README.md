@@ -16,13 +16,18 @@
 ---
 
 
+🎥 **Project Demo Video**  
+<a href="https://youtu.be/2h-lQ6OSOYw" target="_blank">
+  <img src="https://img.youtube.com/vi/2h-lQ6OSOYw/0.jpg" width="600" alt="CoverageX Todo App Demo">
+</a>
+
 
 ## 🧭 Table of Contents
 
-1. [🚀 Tech Stack](#-tech-stack)  
-2. [📁 Folder Structure](#-folder-structure)  
-3. [⚙️ Environment Variables](#️-environment-variables)  
-4. [🧰 Running the Project (via Docker Compose)](#-running-the-project-via-docker-compose)  
+1. [🚀 Tech Stack](#-tech-stack)
+2.  [🧰 Running the Project (via Docker Compose)](#-running-the-project-via-docker-compose)
+3. [📁 Folder Structure](#-folder-structure)  
+4. [⚙️ Environment Variables](#️-environment-variables)  
 5. [🧪 Running Tests](#-running-tests)  
 6. [🗂️ Features](#️-features)  
 7. [🧱 Docker Architecture Overview](#-docker-architecture-overview)  
